@@ -1,0 +1,29 @@
+#include <stdio.h>
+void print(int n){
+    if(n==0){
+        return ;
+    }
+    print(n-1);
+    printf("%d",n);
+   
+}
+void print2(int n){
+    if(n==0){
+        return ;
+    }
+    
+    printf("%d",n);
+    print2(n-1);
+}
+
+int main() {
+    int n;
+    printf("enter the value");
+    scanf("%d",&n);
+    print(n);
+    printf("\n");
+    print2(n);
+    
+
+    return 0;
+}
